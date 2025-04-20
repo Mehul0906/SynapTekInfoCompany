@@ -1,0 +1,61 @@
+.CompanyInfo
+{
+  background-image: url('../public/BG.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .CompanyInfo {
+    background-image: url('../public/BG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    
+  }
+  .textheader
+  {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .navbarmain
+  {
+    z-index: 99;
+    position: relative;
+  }
+  .textheadermain{
+    font-size: 14px;
+  }
+  .textbody
+  {
+    font-size: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.4s ease forwards;
+}
