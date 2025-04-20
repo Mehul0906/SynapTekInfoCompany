@@ -41,10 +41,10 @@ const Home = () => {
         >
           <section style={{minHeight: "90vh"}} className="flex items-center justify-center text-white px-4 textheader">
             <div className="text-center">
-              <h1 className="text-4xl md:text-3xl lg:text-8xl font-bold mb-6 leading-tight textheadermain">
+              <h1 className="lg:text-8xl font-bold mb-6 leading-tight textheadermain">
                 Welcome to <br className="hidden sm:block" /> SynapTek InfoTech
               </h1>
-              <p className="text-lg md:text-lg lg:text-2xl mt-2">
+              <p className="text-lg lg:text-2xl mt-2">
                 | Expert IT Services | Software <br className="hidden md:block" />
                 Development | Cloud Solution |
               </p>
@@ -52,7 +52,8 @@ const Home = () => {
           </section>
         </motion.div>
       </div>
-
+      {/* text-4xl md:text-3xl */}
+      {/* md:text-lg */}
       <AboutPart />
       <ServicesPart />
       <SolutionsPart />
