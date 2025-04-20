@@ -32,13 +32,13 @@ const Home = () => {
     <>
       <div className="CompanyInfo" id='Home'>
         <Navbar />
-        
+        <div 
           className="flex flex-col items-center justify-center space-y-8 flex-1"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: 'easeInOut' }}
           viewport={{ once: true }}
-        
+        >
           <section style={{minHeight: "90vh"}} className="flex items-center justify-center text-white px-4 textheader">
             <div className="text-center">
               <h1 className="lg:text-8xl font-bold mb-6 leading-tight textheadermain">
@@ -50,7 +50,7 @@ const Home = () => {
               </p>
             </div>
           </section>
-        {/* </motion.div> */}
+        </div>
       </div>
       {/* text-4xl md:text-3xl */}
       {/* md:text-lg */}
